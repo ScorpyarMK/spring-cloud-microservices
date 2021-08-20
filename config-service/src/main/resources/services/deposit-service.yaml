@@ -14,14 +14,9 @@ spring:
 
 rabbitmq:
   port: 5672
-  host: rabbitmq
+  host: localhost
   username: guest
   password: guest
   listener:
     direct:
       default-requeue-rejected: true
-
-server:
-  servlet:
-    context-path: /deposits
-  port: 8081
